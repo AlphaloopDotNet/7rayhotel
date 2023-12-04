@@ -1,0 +1,114 @@
+/*
+COMING SOON PAGE
+*/
+
+/* Structure */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #000;
+}
+
+/* TYPOGRAPHY and links color */
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #fff;
+    margin: 20px 0 0 0;
+}
+
+/* Basic Structure
+-------------------------------------------------*/
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100%;
+    color: #fff;
+}
+
+.countdown {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.container_count {
+    width: 60px;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.container_count.last {
+    margin-right: 0;
+}
+
+#countdown_wp {
+    text-align: center;
+    margin: 30px auto 20px;
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 56px;
+    font-weight: 300;
+}
+
+#slides {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+ul.slides-container li img {
+    opacity: 0.3;
+}
+
+#slides .slides-container {
+    display: none;
+}
+
+#slides .scrollable {
+    *zoom: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+
+#slides .scrollable:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* From tablet portrait to mobile */
+@media (max-width: 767px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p.lead {
+        font-size: 16px;
+    }
+
+}
