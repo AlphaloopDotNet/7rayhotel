@@ -74,6 +74,20 @@ Author URI: http://themeforest.net/user/ALPHALOOP IT/
   }
 }
 #preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Optional: Set a specific height for the preloader container */
+}
+.loader{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+#preloader {
   position: fixed;
   top: 0;
   left: 0;
